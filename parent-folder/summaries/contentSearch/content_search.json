@@ -1,0 +1,37 @@
+{
+    "filePath": "content_search.py",
+    "fileDescription": "A Python script to search for specific content within text files in a given directory.",
+    "functions": [
+      {
+        "name": "get_files",
+        "summary": "Prompts the user to enter a directory path and returns a list of text files in that directory.",
+        "parameters": []
+      },
+      {
+        "name": "get_content_search",
+        "summary": "Prompts the user to enter the content they want to search for in the text files.",
+        "parameters": []
+      },
+      {
+        "name": "search_content",
+        "summary": "Searches for the specified content in the given list of files and returns a list of search results.",
+        "parameters": [
+          {
+            "name": "files",
+            "type": "list",
+            "description": "A list of file paths to search."
+          },
+          {
+            "name": "search_for",
+            "type": "str",
+            "description": "The content to search for in the files."
+          }
+        ]
+      },
+      {
+        "name": "main",
+        "summary": "The main function that runs the content search process.",
+        "parameters": []
+      }
+    ]
+  }

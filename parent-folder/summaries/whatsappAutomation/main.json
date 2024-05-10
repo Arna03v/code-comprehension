@@ -1,0 +1,34 @@
+{
+    "filePath": "main.py",
+    "fileDescription": "A Python script that sends a WhatsApp message using the pywhatkit library.",
+    
+    "functions": [
+      {
+        "name": "sendwhatmsg",
+        "module": "pywhatkit",
+        "summary": "Sends a WhatsApp message to a specified phone number at a specified time.",
+        "parameters": [
+          {
+            "name": "phone_no",
+            "type": "str",
+            "description": "The phone number to send the message to, including the country code."
+          },
+          {
+            "name": "message",
+            "type": "str",
+            "description": "The message content to be sent."
+          },
+          {
+            "name": "hour",
+            "type": "int",
+            "description": "The hour (in 24-hour format) at which to send the message."
+          },
+          {
+            "name": "minutes",
+            "type": "int",
+            "description": "The minutes at which to send the message."
+          }
+        ]
+      }
+    ]
+  }

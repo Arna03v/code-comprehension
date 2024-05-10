@@ -1,0 +1,215 @@
+{
+    "filePath": "SimpleCoinV2.py",
+    "fileDescription": "An updated version of the simple blockchain-based cryptocurrency implementation.",
+    "functions": [
+      {
+        "name": "__init__",
+        "summary": "Initializes a new instance of the RequestTransection class.",
+        "parameters": []
+      },
+      {
+        "name": "getitems",
+        "summary": "Returns a dictionary containing the transaction details.",
+        "parameters": []
+      },
+      {
+        "name": "new_user",
+        "summary": "Generates a new RSA key pair for a new user.",
+        "parameters": []
+      },
+      {
+        "name": "create_transection",
+        "summary": "Creates a new transaction with the specified details.",
+        "parameters": [
+          {
+            "name": "category",
+            "type": "str",
+            "description": "The category of the transaction ('new', 'send', or 'receive')."
+          },
+          {
+            "name": "sender",
+            "type": "str",
+            "description": "The sender's address."
+          },
+          {
+            "name": "receiver",
+            "type": "str",
+            "description": "The receiver's address."
+          },
+          {
+            "name": "amount",
+            "type": "str",
+            "description": "The amount to be transferred."
+          },
+          {
+            "name": "fee",
+            "type": "str",
+            "description": "The transaction fee."
+          }
+        ]
+      },
+      {
+        "name": "previous_block_hash",
+        "summary": "Calculates the hash of the previous block based on its attributes.",
+        "parameters": [
+          {
+            "name": "blockitemdict",
+            "type": "dict",
+            "description": "A dictionary containing the attributes of the block."
+          }
+        ]
+      },
+      {
+        "name": "__init__",
+        "summary": "Initializes a new instance of the RequestBlock class.",
+        "parameters": [
+          {
+            "name": "index",
+            "type": "int",
+            "description": "The index of the block in the blockchain."
+          },
+          {
+            "name": "previoushash",
+            "type": "str",
+            "description": "The hash of the previous block in the chain."
+          },
+          {
+            "name": "targetbit",
+            "type": "int",
+            "description": "The target number of leading zeros for the block hash (difficulty)."
+          },
+          {
+            "name": "transbuffer",
+            "type": "list",
+            "description": "A list of transactions to be included in the block."
+          }
+        ]
+      },
+      {
+        "name": "previous_block_hash",
+        "summary": "Calculates the hash of the previous block based on its attributes.",
+        "parameters": [
+          {
+            "name": "blockitemdict",
+            "type": "dict",
+            "description": "A dictionary containing the attributes of the block."
+          }
+        ]
+      },
+      {
+        "name": "merkle_hash",
+        "summary": "Calculates the Merkle root hash of the transactions in the block.",
+        "parameters": []
+      },
+      {
+        "name": "calculate_block",
+        "summary": "Calculates the data hash and loads transactions from the network buffer.",
+        "parameters": []
+      },
+      {
+        "name": "load_data_from_network_buffer",
+        "summary": "Loads transactions from the network buffer into the block's data load.",
+        "parameters": []
+      },
+      {
+        "name": "getitems",
+        "summary": "Returns a dictionary containing the block attributes.",
+        "parameters": []
+      },
+      {
+        "name": "__init__",
+        "summary": "Initializes a new instance of the MineBlock class.",
+        "parameters": []
+      },
+      {
+        "name": "load",
+        "summary": "Loads a block and sets the difficulty for mining.",
+        "parameters": [
+          {
+            "name": "block",
+            "type": "RequestBlock",
+            "description": "The block to be mined."
+          }
+        ]
+      },
+      {
+        "name": "getblock",
+        "summary": "Returns the mined block.",
+        "parameters": []
+      },
+      {
+        "name": "getitems",
+        "summary": "Returns a dictionary containing the mined block attributes.",
+        "parameters": []
+      },
+      {
+        "name": "previous_block_hash",
+        "summary": "Calculates the hash of the previous block based on its attributes.",
+        "parameters": [
+          {
+            "name": "blockitemdict",
+            "type": "dict",
+            "description": "A dictionary containing the attributes of the block."
+          }
+        ]
+      },
+      {
+        "name": "proof_of_work_number_generator",
+        "summary": "Performs the proof-of-work mining process to find a valid block hash.",
+        "parameters": []
+      },
+      {
+        "name": "__init__",
+        "summary": "Initializes a new instance of the SimpleBlockChain class.",
+        "parameters": [
+          {
+            "name": "dbname",
+            "type": "str",
+            "description": "The name of the JSON file used to store the blockchain data."
+          }
+        ]
+      },
+      {
+        "name": "add_genesis_block",
+        "summary": "Adds the genesis block to the blockchain.",
+        "parameters": []
+      },
+      {
+        "name": "new_block_request",
+        "summary": "Validates and adds a new block to the blockchain.",
+        "parameters": [
+          {
+            "name": "block",
+            "type": "RequestBlock",
+            "description": "The new block to be added to the blockchain."
+          }
+        ]
+      },
+      {
+        "name": "validate_new_block",
+        "summary": "Validates a new block before adding it to the blockchain.",
+        "parameters": [
+          {
+            "name": "block",
+            "type": "RequestBlock",
+            "description": "The new block to be validated."
+          }
+        ]
+      },
+      {
+        "name": "check_chain_len",
+        "summary": "Returns the length of the blockchain.",
+        "parameters": []
+      },
+      {
+        "name": "pre_block",
+        "summary": "Returns the last block in the blockchain.",
+        "parameters": []
+      },
+      {
+        "name": "close",
+        "summary": "Saves the current state of the blockchain to the JSON file.",
+        "parameters": []
+      }
+    ]
+  }
